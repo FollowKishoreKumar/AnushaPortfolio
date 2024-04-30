@@ -38,14 +38,22 @@ export class AppComponent implements OnInit {
   openLink(arg0: string) {
       switch(arg0){
         case 'YT':{
-          window.open('https://www.youtube.com/@venugopal.anusha');
+          window.open('https://m.youtube.com/@venugopal.anusha');
           break;
         }
         case 'IG':{
           window.open('https://www.instagram.com/venugopal.anusha');
           break;
         }
+        case 'WA':{
+          window.open('whatsapp://send?text=');
+          break;
+        }
       }
+    }
+
+    openWhatsApp(arg: string){
+      window.open('https://wa.me/+917299313560')
     }
 
 }
