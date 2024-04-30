@@ -45,15 +45,30 @@ export class AppComponent implements OnInit {
           window.open('https://www.instagram.com/venugopal.anusha');
           break;
         }
-        case 'WA':{
-          window.open('whatsapp://send?text=');
-          break;
-        }
       }
     }
 
     openWhatsApp(arg: string){
-      window.open('https://wa.me/+917299313560')
+      let message = ''
+      switch(arg){
+        case 'CE': {
+          message = 'Corporate events';
+          break;
+        }
+        case 'SAD': {
+          message = 'School annual day';
+          break;
+        }
+        case 'COE': {
+          message = 'College events';
+          break;
+        }
+        case 'COC': {
+          message = 'Choreograhy for concerts';
+          break;
+        }
+      }
+      window.open(`https://wa.me/+919841052103?text="Hi Anusha, I want to know more about ${message}"`)
     }
 
 }
