@@ -72,12 +72,12 @@ export class AppComponent implements OnInit {
     }
 
     testPhonepe() {
-      window.open(`phonepe://pay?pa=9790002151@upi&pn=User1&tn=Test UPI&am=20&cu=INR&mc=1234&tr=01234`)
+      window.open(`phonepe://pay?pa=9790002151@upi&pn=9790002151&tn=Test UPI&am=20&cu=INR&mc=1234&tr=01234`)
       }
       testPaytm() {
-        window.open(`paytmmp://pay?pa=9790002151@upi&pn=User1&tn=Test UPI&am=20&cu=INR&mc=1234&tr=01234`)
+        window.open(`paytmmp://pay?pa=9790002151@upi&pn=9790002151&tn=Test UPI&am=20&cu=INR&mc=1234&tr=01234`)
       }
       testGpay() {
-        window.open(`tez://upi/pay?pa=9790002151@upi&pn=User1&tn=Test UPI&am=20&cu=INR&mc=1234&tr=01234`)
+        window.open(`tez://upi/pay?pa=9790002151@upi&pn=9790002151&tn=Test UPI&am=20&cu=INR&mc=1234&tr=01234`)
       }
 }
