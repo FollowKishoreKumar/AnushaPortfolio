@@ -68,7 +68,7 @@ export class AppComponent implements OnInit {
           break;
         }
       }
-      window.open(`https://wa.me/+919841052103?text="Hi Anusha, I want to know more about ${message}"`)
+      window.open(`https://wa.me/+919841052103?text=Hi Anusha, I want to know more about ${message}`)
     }
 
 }
