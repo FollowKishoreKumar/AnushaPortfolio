@@ -71,4 +71,13 @@ export class AppComponent implements OnInit {
       window.open(`https://wa.me/+919841052103?text=Hi Anusha, I want to know more about ${message}`)
     }
 
+    testPhonepe() {
+      window.open(`phonepe://pay?pa=9790002151@upi&pn=User1&tn=Test UPI&am=20&cu=INR&mc=1234&tr=01234`)
+      }
+      testPaytm() {
+        window.open(`paytmmp://pay?pa=9790002151@upi&pn=User1&tn=Test UPI&am=20&cu=INR&mc=1234&tr=01234`)
+      }
+      testGpay() {
+        window.open(`tez://upi/pay?pa=9790002151@upi&pn=User1&tn=Test UPI&am=20&cu=INR&mc=1234&tr=01234`)
+      }
 }
