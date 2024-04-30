@@ -2,9 +2,9 @@
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" (click)="callMe()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Anusha</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About me</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">What</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">ANUSHA</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WHAT</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
@@ -41,21 +41,32 @@
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
     <h2 class="w3-wide">Anusha</h2>
-    <p class="w3-opacity"><i>Dance is life</i></p>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p class="w3-justify">
+      Hey there! I'm Anusha, and I've traded my engineering career for dance! With over seven years of experience in choreography and teaching, I bring a unique blend of technical expertise and artistic flair. Based in Chennai, I offer dynamic dance classes and provide choreography services for any dance-related event, infusing creativity into every routine. You can also catch me as an assistant choreographer in the Indian film industry. Join me on this dance journey as we groove, leap, and twirl together, creating unforgettable moments through movement. Let's dance into boundless possibilities!
+    </p>
     <div class="w3-row w3-padding-32">
       <div class="w3-third">
-        <p>Classical</p>
+        <p>In studio classes</p>
         <img src="../assets/AnuOne.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
       </div>
       <div class="w3-third">
-        <p>Pop</p>
+        <p>Online classes</p>
         <img src="../assets/AnuTwo.JPG" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
       </div>
       <div class="w3-third">
-        <p>Kuthu</p>
+        <p>Foundations of Dance</p>
+        <img src="../assets/AnuFive.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Fitness</p>
+        <img src="../assets/AnuFive.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Yoga</p>
+        <img src="../assets/AnuFive.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Personal training</p>
         <img src="../assets/AnuFive.jpg" class="w3-round" alt="Random Name" style="width:60%">
       </div>
     </div>
@@ -138,7 +149,7 @@
       <div class="w3-col m6 w3-large w3-margin-bottom">
         <i class="fa fa-map-marker" style="width:30px"></i> Chennai, India<br>
         <i class="fa fa-phone" style="width:30px"></i> Phone: +91 9841052103<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: <br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: {{ email }}<br>
       </div>
       <div class="w3-col m6">
         <form action="/action_page.php" target="_blank">
@@ -165,11 +176,8 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <i class="fa fa-youtube-play w3-hover-opacity" (click)="openLink('YT')"></i>
+  &nbsp;
+  <i class="fa fa-instagram w3-hover-opacity" (click)="openLink('IG')"></i>
   <p class="w3-medium">Maintained by <a href="https://github.com/FollowKishoreKumar/AnushaPortfolio" target="_blank">Kishore Kumar Sadasivam</a></p>
 </footer>

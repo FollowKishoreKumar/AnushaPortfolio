@@ -9,7 +9,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
+
   title = 'Anusha';
+  email = 'anusha.naach@gmail.com'
 
   ngOnInit(): void {
 
@@ -32,5 +34,18 @@ export class AppComponent implements OnInit {
       x.className = x?.className.replace(" w3-show", "");
     }
   }
+
+  openLink(arg0: string) {
+      switch(arg0){
+        case 'YT':{
+          window.open('https://www.youtube.com/@venugopal.anusha');
+          break;
+        }
+        case 'IG':{
+          window.open('https://www.instagram.com/venugopal.anusha');
+          break;
+        }
+      }
+    }
 
 }
